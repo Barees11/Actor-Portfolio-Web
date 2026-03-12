@@ -1,0 +1,580 @@
+Below is a **complete, structured brief + starter code** you can give to **Replit** (or paste into it) to generate the UI/UX for the actor portfolio. It keeps the **cinematic dark theme**, **minimal premium aesthetic**, and **clear casting-friendly layout** we discussed. 🎭
+
+---
+
+# 1. Project Goal
+
+Create a **single-page actor portfolio website** for **Aishwarya Priyaprasad**.
+
+The site should:
+
+* Look **cinematic and premium**
+* Be **minimal, dark, and elegant**
+* Focus on **visual storytelling**
+* Help **casting directors quickly evaluate the actor**
+
+Design inspiration:
+
+* modern **actor / filmmaker portfolio**
+* large imagery
+* bold typography
+* clean navigation
+* smooth scroll sections
+
+The website should feel **professional but cool**, not corporate.
+
+---
+
+# 2. Design Theme
+
+### Visual Style
+
+* Dark cinematic theme
+* Black / charcoal background
+* White typography
+* Minimal color accents
+* Large image sections
+
+### Mood
+
+Think:
+
+```
+Netflix talent page
+Film director portfolio
+Luxury editorial website
+```
+
+### Typography
+
+Recommended style:
+
+```
+Primary font: modern sans-serif
+Letter spacing: slightly wide
+Large headings
+Minimal body text
+```
+
+---
+
+# 3. Page Layout Structure
+
+Single page layout:
+
+```
+Hero Section
+↓
+Headshots Gallery
+↓
+Showreel
+↓
+About
+↓
+Credits / Work
+↓
+Special Skills
+↓
+Contact
+↓
+Instagram
+↓
+Resume Download
+```
+
+Everything scrolls vertically.
+
+---
+
+# 4. Navigation Bar
+
+Minimal top navigation.
+
+Sections:
+
+```
+HEADSHOTS
+SHOWREEL
+ABOUT
+CREDITS
+CONTACT
+```
+
+Navigation behavior:
+
+* sticky top navigation
+* smooth scrolling
+* minimal styling
+
+---
+
+# 5. Section Breakdown
+
+---
+
+# HERO SECTION (First Screen)
+
+Must include:
+
+```
+Actor Name
+Title / Tagline
+Location
+Primary Headshot
+```
+
+Layout:
+
+Left side text
+Right side hero image
+
+Example:
+
+```
+AISHWARYA PRIYAPRASAD
+ACTOR · CREATOR
+Mumbai
+```
+
+Leave blank placeholder for hero image.
+
+---
+
+# HEADSHOTS GALLERY
+
+Purpose:
+
+Show acting range.
+
+Include:
+
+```
+4–8 headshots
+```
+
+Mood examples:
+
+```
+Commercial
+Dramatic
+Natural
+Character look
+```
+
+Layout:
+
+Grid gallery:
+
+```
+3 columns desktop
+2 columns tablet
+1 column mobile
+```
+
+Images large, minimal captions.
+
+Leave blank placeholders.
+
+---
+
+# SHOWREEL SECTION
+
+Second most important section.
+
+Include:
+
+```
+Main showreel
+Optional clips
+```
+
+Examples:
+
+```
+Main acting reel
+Monologue
+Scene excerpt
+Commercial work
+```
+
+Embed video placeholder.
+
+Leave blank.
+
+---
+
+# ABOUT SECTION
+
+Short bio.
+
+Keep concise.
+
+Example placeholder:
+
+```
+Actor bio goes here.
+```
+
+Maximum:
+
+```
+200–300 words
+```
+
+---
+
+# CREDITS / WORK
+
+Sections:
+
+```
+FILM
+DIGITAL
+THEATRE
+```
+
+Example layout:
+
+```
+FILM
+Title – Director – Production
+
+DIGITAL
+Project – Platform
+
+THEATRE
+Production – Role
+```
+
+Leave blank placeholders.
+
+---
+
+# SPECIAL SKILLS
+
+Casting directors care about this.
+
+Examples:
+
+```
+Accents
+Dance
+Singing
+Sports
+Languages
+```
+
+Leave placeholder list.
+
+---
+
+# CONTACT SECTION
+
+Must include:
+
+```
+Email
+Agent / Manager
+Casting contact
+Instagram
+```
+
+Leave placeholders.
+
+---
+
+# INSTAGRAM SECTION
+
+Purpose:
+
+Show personality and creator work.
+
+Include:
+
+```
+Instagram profile link
+Optional grid
+```
+
+Leave placeholders.
+
+---
+
+# RESUME DOWNLOAD
+
+Provide downloadable PDF.
+
+Example:
+
+```
+Download Acting Resume
+```
+
+Leave placeholder link.
+
+---
+
+# Folder Structure (for Replit)
+
+```
+portfolio
+│
+├ index.html
+├ style.css
+│
+├ images
+│   ├ hero.jpg
+│   ├ headshot1.jpg
+│   ├ headshot2.jpg
+│   ├ headshot3.jpg
+│   └ headshot4.jpg
+│
+├ videos
+│   └ showreel.mp4
+│
+└ resume.pdf
+```
+
+Currently these will remain **empty placeholders**.
+
+---
+
+# Starter HTML Template (Blank Portfolio)
+
+This is designed so you can **fill in later**.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actor Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+AP
+</div>
+
+<div class="nav-links">
+
+<a href="#headshots">HEADSHOTS</a>
+<a href="#showreel">SHOWREEL</a>
+<a href="#about">ABOUT</a>
+<a href="#credits">CREDITS</a>
+<a href="#contact">CONTACT</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>ACTOR NAME HERE</h1>
+
+<p class="tagline">
+ACTOR · CREATOR
+</p>
+
+<p class="location">
+LOCATION HERE
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<!-- HERO IMAGE PLACEHOLDER -->
+
+</div>
+
+</section>
+
+
+
+<!-- HEADSHOTS -->
+
+<section id="headshots">
+
+<h2>HEADSHOTS</h2>
+
+<div class="gallery">
+
+<div class="image-placeholder"></div>
+<div class="image-placeholder"></div>
+<div class="image-placeholder"></div>
+<div class="image-placeholder"></div>
+<div class="image-placeholder"></div>
+<div class="image-placeholder"></div>
+
+</div>
+
+</section>
+
+
+
+<!-- SHOWREEL -->
+
+<section id="showreel">
+
+<h2>SHOWREEL</h2>
+
+<div class="video-placeholder">
+
+<!-- SHOWREEL VIDEO GOES HERE -->
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>ABOUT</h2>
+
+<p>
+
+BIO TEXT GOES HERE.
+
+</p>
+
+</section>
+
+
+
+<!-- CREDITS -->
+
+<section id="credits">
+
+<h2>CREDITS</h2>
+
+<div class="credits">
+
+<div>
+
+<h3>FILM</h3>
+
+<p>
+Film credits here
+</p>
+
+</div>
+
+<div>
+
+<h3>DIGITAL</h3>
+
+<p>
+Digital credits here
+</p>
+
+</div>
+
+<div>
+
+<h3>THEATRE</h3>
+
+<p>
+Theatre credits here
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SPECIAL SKILLS -->
+
+<section>
+
+<h2>SPECIAL SKILLS</h2>
+
+<ul>
+
+<li>Skill placeholder</li>
+<li>Skill placeholder</li>
+<li>Skill placeholder</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>CONTACT</h2>
+
+<p>Email: placeholder@email.com</p>
+
+<p>Agent: placeholder</p>
+
+<p>Casting Contact: placeholder</p>
+
+<p>Instagram: @placeholder</p>
+
+</section>
+
+
+
+<!-- RESUME -->
+
+<section>
+
+<h2>RESUME</h2>
+
+<a href="#">
+Download Acting Resume
+</a>
+
+</section>
+
+
+
+</body>
+
+</html>
+```
+
+---
+
+# What This Gives You
+
+✔ Clear actor portfolio structure
+✔ Casting-friendly layout
+✔ Cinematic theme ready
+✔ Fully editable placeholders
+✔ Works easily in Replit
+✔ Deployable to GitHub Pages later
+
+---
+
+💡 If you'd like, I can also give you **one extremely good Replit prompt** that will make Replit generate a **very polished Netflix-style actor portfolio UI automatically** from this specification.

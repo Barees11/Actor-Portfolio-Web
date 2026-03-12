@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Aishwarya Priyaprasad – Actor Portfolio"
+version = "1.0.0"
+id = "artifacts/actor-portfolio"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 24900
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/actor-portfolio run dev"
+
+[services.env]
+PORT = "24900"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/actor-portfolio", "run", "build"]
+publicDir = "artifacts/actor-portfolio/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

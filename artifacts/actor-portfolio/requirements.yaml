@@ -1,0 +1,35 @@
+packages:
+  "framer-motion": "For premium cinematic scroll animations and entry reveals"
+  "lucide-react": "For icons like Play, Mail, Instagram, Download"
+  "clsx": "For conditional class merging"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/actor-portfolio/public/images/hero.png"
+    description: "Cinematic dark moody portrait of a South Asian female actor, dramatic rim lighting, dark background, editorial style, professional headshot"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-1.png"
+    description: "Commercial headshot of a South Asian female actor, warm cinematic lighting, looking directly at camera, dark background"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-2.png"
+    description: "Dramatic theatrical headshot of a female actor, high contrast black and white style lighting, deep shadows"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-3.png"
+    description: "Natural moody portrait of a female actor, soft diffused light, serious expression, cinematic color grading"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-4.png"
+    description: "Character acting portrait, intense gaze, cinematic lighting, dark background, raw emotion"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-5.png"
+    description: "Editorial fashion portrait of an actor, striking pose, dark background, muted elegant colors"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/headshot-6.png"
+    description: "Classic moody actor headshot, deep shadows, dramatic side lighting, professional"
+    aspect_ratio: "3:4"
+  - path: "artifacts/actor-portfolio/public/images/showreel-poster.png"
+    description: "Cinematic still from a dark drama film, wide shot, atmospheric lighting, moody"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a static, single-page portfolio. No backend API is required.
+  - Smooth scrolling is enabled for anchor links.
