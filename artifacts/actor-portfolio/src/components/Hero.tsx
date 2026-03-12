@@ -2,71 +2,80 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col md:flex-row items-center justify-center overflow-hidden pt-20">
-      
-      {/* Background abstract glow */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Full-screen background image */}
+      <img
+        src={`${import.meta.env.BASE_URL}images/hero.png`}
+        alt="Aishwarya Priyaprasad"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
 
-      <div className="max-w-7xl w-full mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center relative z-10 gap-12 md:gap-0">
-        
-        {/* Left Content */}
-        <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full md:w-1/2 flex flex-col items-start pt-12 md:pt-0"
+      {/* Dark gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
+
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col justify-end pb-16 px-8 md:px-16 lg:px-20 z-10">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="text-xs font-display tracking-[0.35em] text-yellow-400/80 uppercase mb-4"
         >
-          <div className="overflow-hidden mb-2">
-            <motion.h2 
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-              className="text-xs md:text-sm font-display tracking-[0.3em] text-accent mb-4"
-            >
-              Mumbai, India
-            </motion.h2>
-          </div>
-          
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold uppercase tracking-tight leading-[0.9] text-foreground mb-6">
-            Aishwarya
-            <br />
-            <span className="text-stroke block mt-2">Priyaprasad</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-muted-foreground font-light tracking-[0.2em] uppercase max-w-md mt-4 border-l-2 border-accent pl-6">
-            Actor &middot; Creator
+          Mumbai, India
+        </motion.p>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-bold uppercase tracking-tight leading-[0.88] text-white"
+        >
+          Aishwarya
+          <br />
+          <span className="opacity-90">Priyaprasad</span>
+        </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+          className="flex items-center gap-4 mt-6"
+        >
+          <div className="w-10 h-[1px] bg-yellow-400/70" />
+          <p className="text-sm md:text-base text-white/70 font-light tracking-[0.25em] uppercase">
+            Actor · Creator
           </p>
-
-          <motion.a
-            href="#showreel"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 1 }}
-            className="mt-16 group flex items-center gap-4 text-xs font-display tracking-[0.2em] uppercase text-foreground hover:text-accent transition-colors duration-300"
-          >
-            <span className="w-12 h-[1px] bg-border group-hover:bg-accent transition-colors duration-300"></span>
-            Watch Showreel
-          </motion.a>
         </motion.div>
 
-        {/* Right Image */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full md:w-1/2 flex justify-center md:justify-end"
+        <motion.a
+          href="#showreel"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="mt-10 inline-flex items-center gap-4 text-xs font-display tracking-[0.2em] uppercase text-white/60 hover:text-yellow-400 transition-colors duration-300 w-fit"
         >
-          <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-[3/4] overflow-hidden rounded-sm group">
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60" />
-            <img 
-              src={`${import.meta.env.BASE_URL}images/hero.png`} 
-              alt="Aishwarya Priyaprasad" 
-              className="w-full h-full object-cover object-center grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
-            />
-          </div>
-        </motion.div>
+          <span className="w-10 h-[1px] bg-current" />
+          Watch Showreel
+        </motion.a>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 0.8 }}
+        className="absolute bottom-8 right-10 flex flex-col items-center gap-2 z-10"
+      >
+        <div className="w-[1px] h-16 bg-white/20 relative overflow-hidden">
+          <motion.div
+            animate={{ y: ["-100%", "100%"] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-0 bg-white/60"
+          />
+        </div>
+        <span className="text-[9px] tracking-[0.3em] text-white/40 uppercase rotate-90 origin-center mt-2">Scroll</span>
+      </motion.div>
     </section>
   );
 }

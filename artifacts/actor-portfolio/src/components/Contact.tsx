@@ -4,20 +4,20 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-32 w-full border-t border-border/30 relative">
+    <section id="contact" className="py-14 w-full border-t border-border/30 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionHeading title="Contact" subtitle="Get in touch" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           <motion.a
             href="mailto:contact@aishwaryapriyaprasad.com"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center justify-center p-12 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
+            className="flex flex-col items-center justify-center p-8 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
           >
-            <Mail className="w-8 h-8 text-muted-foreground group-hover:text-accent mb-6 transition-colors duration-300" />
+            <Mail className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
             <h4 className="font-display tracking-widest uppercase text-sm mb-2">Direct</h4>
             <p className="text-muted-foreground text-sm text-center">contact@<br/>aishwaryapriyaprasad.com</p>
           </motion.a>
@@ -28,9 +28,9 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col items-center justify-center p-12 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
+            className="flex flex-col items-center justify-center p-8 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
           >
-            <MapPin className="w-8 h-8 text-muted-foreground group-hover:text-accent mb-6 transition-colors duration-300" />
+            <MapPin className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
             <h4 className="font-display tracking-widest uppercase text-sm mb-2">Management</h4>
             <p className="text-muted-foreground text-sm text-center">management@<br/>talent-agency.com</p>
           </motion.a>
@@ -43,9 +43,9 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col items-center justify-center p-12 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
+            className="flex flex-col items-center justify-center p-8 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
           >
-            <Instagram className="w-8 h-8 text-muted-foreground group-hover:text-accent mb-6 transition-colors duration-300" />
+            <Instagram className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
             <h4 className="font-display tracking-widest uppercase text-sm mb-2">Social</h4>
             <p className="text-muted-foreground text-sm text-center">@aishwarya.priyaprasad</p>
           </motion.a>
@@ -56,7 +56,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-20 flex justify-center"
+          className="mt-10 flex justify-center"
         >
           <button 
             onClick={() => alert("Downloading resume...")}

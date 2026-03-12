@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-40 w-full border-t border-border/30 relative overflow-hidden">
+    <section id="about" className="py-14 w-full border-t border-border/30 relative overflow-hidden">
       {/* Decorative vertical line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-border to-transparent opacity-30" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-start gap-16 lg:gap-32 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-start gap-10 lg:gap-20 relative z-10">
         
         <motion.div 
           initial={{ opacity: 0, x: -30 }}

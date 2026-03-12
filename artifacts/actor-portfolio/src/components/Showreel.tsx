@@ -4,7 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Showreel() {
   return (
-    <section id="showreel" className="py-24 md:py-32 w-full bg-card/30 border-t border-border/30">
+    <section id="showreel" className="py-14 w-full bg-card/30 border-t border-border/30">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionHeading title="Showreel" subtitle="Featured Work" />
 
@@ -38,7 +38,7 @@ export function Showreel() {
           </div>
 
           {/* Sub Clips */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-5">
             {["Dramatic Monologue", "Commercial Work", "Theatre Performance"].map((title, i) => (
               <div key={title} className="group cursor-pointer">
                 <div className="relative aspect-video bg-card border border-border/50 overflow-hidden mb-4 rounded-sm">

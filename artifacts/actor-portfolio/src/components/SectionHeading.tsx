@@ -8,7 +8,7 @@ interface SectionHeadingProps {
 
 export function SectionHeading({ title, subtitle, alignment = "center" }: SectionHeadingProps) {
   return (
-    <div className={`mb-16 md:mb-24 flex flex-col ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
+    <div className={`mb-8 flex flex-col ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
       {subtitle && (
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export function SectionHeading({ title, subtitle, alignment = "center" }: Sectio
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-        className={`h-[1px] bg-border mt-8 w-24 ${alignment === "center" ? "" : "origin-left"}`}
+        className={`h-[1px] bg-border mt-4 w-16 ${alignment === "center" ? "" : "origin-left"}`}
       />
     </div>
   );

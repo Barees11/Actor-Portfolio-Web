@@ -9,7 +9,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section className="py-24 w-full bg-card/20 border-t border-border/30">
+    <section className="py-14 w-full bg-card/20 border-t border-border/30">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <span className="text-xs font-display tracking-[0.3em] text-accent mb-8 block uppercase">
           Special Skills
