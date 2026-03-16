@@ -7,23 +7,20 @@ const creditsData = [
     category: "Film",
     items: [
       { title: "The Silent Echo", role: "Lead — Maya", director: "Vikram Singh", production: "Phantom Films", year: "2024" },
-      { title: "Midnight Sun", role: "Supporting — Tara", director: "Anya Kapoor", production: "Wonderwall Media", year: "2023" },
-      { title: "Urban Shadows", role: "Lead — Priya", director: "Rohan Desai", production: "Maddock Films", year: "2022" },
-    ],
+         ],
   },
   {
     category: "Digital",
     items: [
       { title: "Neon Gods", role: "Recurring", director: "StreamPrime Originals", production: "8-Episode Series", year: "2024" },
-      { title: "Lumina Brand Campaign", role: "Face of Campaign", director: "Ogilvy India", production: "TVC + Digital", year: "2023" },
-      { title: "Cityscapes", role: "Guest Star", director: "WebSeries Network", production: "6-Episode Arc", year: "2022" },
+     
     ],
   },
   {
     category: "Theatre",
     items: [
       { title: "A Doll's House", role: "Nora Helmer", director: "National Theatre Group", production: "Mumbai Tour", year: "2023" },
-      { title: "Blood Wedding", role: "The Bride", director: "Prithvi Theatre", production: "Prithvi Theatre", year: "2022" },
+     
     ],
   },
 ];

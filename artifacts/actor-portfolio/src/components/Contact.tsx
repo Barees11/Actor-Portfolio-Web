@@ -6,9 +6,13 @@ export function Contact() {
   return (
     <section id="contact" className="py-14 w-full border-t border-border/30 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
+
         <SectionHeading title="Contact" subtitle="Get in touch" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+
+          {/* DIRECT EMAIL */}
+
           <motion.a
             href="mailto:contact@aishwaryapriyaprasad.com"
             initial={{ opacity: 0, y: 20 }}
@@ -19,8 +23,13 @@ export function Contact() {
           >
             <Mail className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
             <h4 className="font-display tracking-widest uppercase text-sm mb-2">Direct</h4>
-            <p className="text-muted-foreground text-sm text-center">contact@<br/>aishwaryapriyaprasad.com</p>
+            <p className="text-muted-foreground text-sm text-center">
+              contact@<br/>aishwaryapriyaprasad.com
+            </p>
           </motion.a>
+
+
+          {/* MANAGEMENT */}
 
           <motion.a
             href="mailto:management@talent-agency.com"
@@ -32,11 +41,16 @@ export function Contact() {
           >
             <MapPin className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
             <h4 className="font-display tracking-widest uppercase text-sm mb-2">Management</h4>
-            <p className="text-muted-foreground text-sm text-center">management@<br/>talent-agency.com</p>
+            <p className="text-muted-foreground text-sm text-center">
+              management@<br/>talent-agency.com
+            </p>
           </motion.a>
 
+
+          {/* INSTAGRAM */}
+
           <motion.a
-            href="https://instagram.com"
+            href="https://www.instagram.com/aishwarya_priyaprasad/"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -46,10 +60,16 @@ export function Contact() {
             className="flex flex-col items-center justify-center p-8 bg-card border border-border/50 rounded-sm hover:border-accent/50 hover:bg-card/80 transition-all duration-300 group"
           >
             <Instagram className="w-7 h-7 text-muted-foreground group-hover:text-accent mb-4 transition-colors duration-300" />
-            <h4 className="font-display tracking-widest uppercase text-sm mb-2">Social</h4>
-            <p className="text-muted-foreground text-sm text-center">@aishwarya.priyaprasad</p>
+            <h4 className="font-display tracking-widest uppercase text-sm mb-2">Instagram</h4>
+            <p className="text-muted-foreground text-sm text-center">
+              @aishwarya_priyaprasad
+            </p>
           </motion.a>
+
         </div>
+
+
+        {/* RESUME BUTTON */}
 
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
